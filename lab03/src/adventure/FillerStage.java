@@ -32,7 +32,8 @@ public class FillerStage implements AdventureStage {
      * Filler stages do nothing, but display their prompt, so this does nothing.
      */
     @Override
-    public void playStage() {}
+    public void playStage() {
+    }
 
     @Override
     public String nextStagePrompt() {
