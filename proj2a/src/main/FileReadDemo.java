@@ -6,7 +6,7 @@ import static utils.Utils.*;
 
 public class FileReadDemo {
     public static void main(String[] args) {
-        In in = new In(SHORT_WORDS_FILE);
+        In in = new In("data/ngrams/very_short.csv");
         int i = 0;
 
         while (!in.isEmpty()) {
@@ -16,7 +16,7 @@ public class FileReadDemo {
             System.out.println(nextLine);
             System.out.print("After splitting on tab characters, the first word is: ");
             String[] splitLine = nextLine.split("\t");
-            System.out.println(splitLine[0]);
+            System.out.println(splitLine[2]);
         }
     }
 }
