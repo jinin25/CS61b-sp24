@@ -17,5 +17,6 @@ public class DummyHistoryTextHandler extends NgordnetQueryHandler {
         response += "Start Year: " + q.startYear() + "\n";
         response += "End Year: " + q.endYear() + "\n";
         return response;
+
     }
 }

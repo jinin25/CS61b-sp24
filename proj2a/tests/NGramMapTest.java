@@ -16,7 +16,7 @@ import static com.google.common.truth.Truth.assertThat;
 public class NGramMapTest {
     @Test
     public void testCountHistory() {
-        NGramMap ngm = new NGramMap(SHORT_WORDS_FILE,"data/ngrams/total_counts.csv");
+        NGramMap ngm = new NGramMap(SHORT_WORDS_FILE, TOTAL_COUNTS_FILE);
         List<Integer> expectedYears = new ArrayList<>
                 (Arrays.asList(2005, 2006, 2007, 2008));
         List<Double> expectedCounts = new ArrayList<>
