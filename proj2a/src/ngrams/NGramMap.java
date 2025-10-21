@@ -136,7 +136,7 @@ public class NGramMap {
     public TimeSeries summedWeightHistory(Collection<String> words) {
         TimeSeries summedTs = new TimeSeries();
         for (String word : words) {
-            summedTs.plus(weightHistory(word));
+            summedTs = summedTs.plus(weightHistory(word));
         }
         return summedTs;
     }
